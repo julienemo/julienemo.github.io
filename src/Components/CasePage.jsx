@@ -30,8 +30,8 @@ const CasePage = ({ intl }) => {
 
     for (let i = 1; i <= sections; i++) {
       list.push(
-        <div key={ShortID.generate()}>
-          <h1>
+        <div className="page" key={ShortID.generate()}>
+          <h1 className="case_title">
             <FormattedMessage id={`${currentCase}.section.${i}.title`} />
           </h1>
           {showParagraphes(
@@ -55,9 +55,9 @@ const CasePage = ({ intl }) => {
   }, [currentCase]);
 
   return (
-    <div className="page">
+    <>
       {currentCase && currentDisplay}
-    </div>
+    </>
   );
 };
 

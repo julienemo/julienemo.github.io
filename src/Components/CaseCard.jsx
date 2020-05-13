@@ -11,7 +11,7 @@ const CaseCard = ({ ...caseName }) => {
     <div className="case_card">
       <h3 className="case_card_client">
 
-        <FormattedMessage id={currentCase} />
+        <FormattedMessage id={`${currentCase}.section.1.title`} />
 
       </h3>
       <p>

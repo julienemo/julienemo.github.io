@@ -6,7 +6,6 @@ $input_bg: #e6edf4;
 body {
   margin: 0;
   padding: 0;
-  min-height: 80vh;
   color: white !important;
   background-color: $background_gray;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -33,6 +32,10 @@ body {
     &:hover {
       color: $background_gray !important;
       cursor: pointer !important;
+    }
+
+    #root {
+      min-height: 10rem;
     }
   }
 
@@ -109,11 +112,12 @@ nav {
 
 // pages
 .page {
-  margin: 3rem;
+  margin: 5rem 20%;
   text-align: center;
 
   h1 {
     color: $primary_red;
+    align-self: center;
   }
 
   p {
@@ -148,6 +152,7 @@ nav {
 
 // footer
 footer {
-  width: 100%;
   margin-bottom: -5rem;
+  margin: 0 3rem;
+  position: sticky;
 }
